@@ -136,7 +136,7 @@
     $container.removeClass('mobile-nav-on');
   });
 
-  if(window.location.pathname == '/Redirection-aliexpress/index.html') {
+  if(window.location && window.location.pathname && window.location.pathname.toLowerCase() == '/redirection-aliexpress/index.html') {
     var query = window.location.search.substring(1);
     var qs = parse_query_string(query);
 
