@@ -3,13 +3,10 @@
   <div id="header-outer" class="outer">
     <div id="header-title" class="inner">
       <h1 id="logo-wrap">
-        <a href="<%- url_for() %>" id="logo"><%= config.title %></a>
+        <a href="<%- url_for() %>" id="logo">
+          <%- image_tag("css/images/logo-pirates.png",{class: "img-responsive",alt:"Pirates Shopping : Partez à l'abordage des bonnes affaires !"}) %>
+        </a>
       </h1>
-      <% if (theme.subtitle){ %>
-        <h2 id="subtitle-wrap">
-          <a href="<%- url_for() %>" id="subtitle">🦜 <%= theme.subtitle %>️ ☠️</a>
-        </h2>
-      <% } %>
     </div>
     <div id="header-inner" class="inner">
       <nav id="main-nav">

@@ -37,7 +37,7 @@
   text-align: center
   height: logo-size
   position: absolute
-  top: 25%
+  top: 20%
   left: 0
   margin-top: logo-size * -0.5
 
@@ -52,6 +52,11 @@ $logo-text
   font-size: logo-size
   line-height: logo-size
   letter-spacing: 2px
+.img-responsive
+  max-width: 100%
+@media screen and (min-width: 460px)
+  .img-responsive
+    max-width: 450px
 
 #subtitle
   @extend $logo-text
